@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AR Painting Viewer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    button {
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>View Painting on Your Wall</h1>
+
+  <a href="intent://arvr.google.com/scene-viewer/1.0?file=https://drive.google.com/drive/folders/1-q6sqmY9G54xuFq4aVvImRla12CaD6fs?usp=sharing&mode=ar_only#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://yourdomain.com;end;">
+    <button>View in AR</button>
+  </a>
+
+</body>
+</html>
